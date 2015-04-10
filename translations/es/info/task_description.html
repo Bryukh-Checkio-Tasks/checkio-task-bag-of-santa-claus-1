@@ -1,0 +1,35 @@
+<p>Cuando llega el A&ntilde;o Nuevo, todos los ni&ntilde;os esperan la visita de Santa Claus. &Eacute;l viene con una enorme bolsa de regalos, y puedes elegir cualquiera de ellos. Pero, &iquest;c&oacute;mo hacer la mejor elecci&oacute;n? Santa saca un regalo de su bolsa, y si no te gusta, lo pone de nuevo en la bolsa y nunc m&aacute;s lo vuelva a sacar. Esto puede conllevar a situaciones indeseables, como cuando la &uacute;ltima cosa de la bolsa es una mu&ntilde;eca, y t&uacute; ya hab&iacute;as rechazado un sombrero de pirata, esperando a obtener un set de trenes.</p>
+
+<p>Cuando esto sucedi&oacute; con Juan, su padre le dijo - &quot;No te preocupes, te voy a ense&ntilde;ar c&oacute;mo elegir un mejor regalo. Piensa en cu&aacute;ntos regalos hay en total en la bolsa.&rdquo;</p>
+
+<p>Tu funci&oacute;n ser&aacute; llamada muchas veces en el mismo entorno. Por cada paso se te informar&aacute; sobre el valor del regalo actual, la cantidad si los regalos en la bolsa y el n&uacute;mero del regalo actual (contado a partir de 1). Con esta informaci&oacute;n deber&aacute;s decidir en cada paso si aceptas el regalo o no - Verdadero o Falso.</p>
+
+<p>Tu funci&oacute;n ser&aacute; verificada en varias ocasiones con diferentes bolsas que contienen cualquier n&uacute;mero de regalos entre 10 y 1000. S&oacute;lo contaremos aquellas ocasiones en las que escogiste el mejor regalo de cada bolsa, los segundos mejores regalos no son para nosotros! Nota: Todas las llamadas se ejecutaran en el mismo entorno, as&iacute; que ten cuidado con asignaciones globales. Al final deber&aacute;s escoger 700+ mejores regalos entre 2,000 bolsas.</p>
+
+<p><strong>Datos de Entrada: </strong> Tres argumentos.<br />
+<em>current_gift</em> - el valor del regalo actual, como un decimal (float).<br />
+<em>gifts_in_bag</em> - la cantidad de regalos en una bolsa, como un entero (int).<br />
+<em>gift_number</em> - el n&uacute;mero del regalo actual, como un entero (int), desde 1 hasta gifts_in_bag.</p>
+
+<p><strong>Salida: </strong> &iquest;Aceptas o no el regalo actual? , como un valor booleano (bool).</p>
+
+<div class="for_info_only">
+<p><strong>Ejemplos de implementaci&oacute;n (s&oacute;lo para mostrar el API): </strong></p>
+
+<pre class="brush: python">
+def choose_good_gift(current_gift, gifts_in_bag, gift_number):
+    from random import random
+    # coin
+    if random() &gt; 0.5:
+        return True
+    else:
+        return False
+    </pre>
+</div>
+
+<p class="for_info_only"><strong>&iquest;C&oacute;mo se usa?:</strong> Este c&oacute;digo puede reconocer situaciones &oacute;ptima s y te permitir&aacute; iniciar ciertos eventos durante esas situaciones. Por ejemplo, podr&iacute;a crear una bot que rastrea la web en busca de entradas para conciertos y que te informa autom&aacute;ticamente cuando tu banda favorita est&aacute; tocando en tu ciudad.</p>
+
+<p><strong>Condiciones:</strong><br />
+10 &le; gifts_in_bag &le; 1000<br />
+0 &le; current_gift<br />
+Los regalos se ofrecen en orden aleatorio.</p>
