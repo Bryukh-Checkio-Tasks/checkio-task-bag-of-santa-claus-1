@@ -9,11 +9,10 @@ py3_code = """
 from random import random, randint, uniform
 
 
-scale = (random() + random()) ** randint(0, 1024)
-
 standings = gift_count = best_gifts = 0
 bag_count = 2000
 for i in range(bag_count):
+    scale = (random() + random()) ** randint(0, 1024)
     gifts_in_bag = randint(10, 1000)
     gift_count += gifts_in_bag
 
